@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function results() {
+                var name = document.getElementById('name').value;
+                var email= document.getElementById('email').value;
+                var list=document.getElementById('list').value;
+                document.write(name + "<br>");
+                document.write(email + "<br>");
+                document.write(list + "<br>");
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return results() ">
+        <h3>name</h3>
+        <input id="name" type="text" name="name">
+        <h3>Email:</h3>
+        <input id="email" type="text" name="email">
+        <select name="list" size="1" required id="list">
+            <option value="All Classes">All Classes</option>
+            <option value="Anubhuti Class(EA)">Anubhuti Class(EA)</option>
+            <option value="AC First Class(1A)">AC First Class(1A)</option>
+        </select><br>
+        <h3>Leave a Comment</h3>
+        <textarea id="comments" name="comments" rows="6" cols="40">Your Message here.</textarea>
+        <br><br>
+        <input id="submit" type="submit" value="send your data!">
+        </form>
+    </body>
+</html>
